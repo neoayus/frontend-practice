@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- HEADER  -->
+    <header class="nav">
+        <!-- icons on left of nav (single)  -->
+        <div class="icon apple">
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6317 7.046C14.0247 7.41744 13.5219 7.93683 13.1704 8.55554C12.8189 9.17425 12.6301 9.87204 12.6217 10.5836C12.6241 11.3844 12.8614 12.1669 13.3041 12.8342C13.7468 13.5015 14.3756 14.0243 15.1125 14.3378C14.822 15.2752 14.392 16.1635 13.837 16.9729C13.0429 18.116 12.2126 19.2591 10.9492 19.2591C9.6858 19.2591 9.3609 18.5251 7.9049 18.5251C6.4849 18.5251 5.9797 19.2832 4.8249 19.2832C3.6701 19.2832 2.8638 18.2243 1.9373 16.9248C0.713333 15.1043 0.0406601 12.9694 0 10.7761C0 7.1661 2.3464 5.2531 4.6566 5.2531C5.884 5.2531 6.9066 6.0593 7.6766 6.0593C8.4106 6.0593 9.5537 5.205 10.9495 5.205C11.6672 5.18642 12.3784 5.34462 13.0205 5.66566C13.6626 5.98671 14.2159 6.46074 14.6317 7.046ZM7.7731 5.0004C7.68831 5.00014 7.60372 4.99211 7.5204 4.9764C7.49687 4.86559 7.48477 4.75267 7.4843 4.6394C7.52446 3.70814 7.88587 2.81952 8.5071 2.1246C9.20435 1.3237 10.1816 0.81999 11.2385 0.716797C11.2636 0.839515 11.2757 0.96454 11.2746 1.0898C11.2516 2.03968 10.9033 2.9529 10.2879 3.6768C9.98032 4.05635 9.59878 4.36941 9.16647 4.59694C8.73416 4.82448 8.2601 4.96174 7.7731 5.0004Z" fill="black"/>
+            </svg>
+        </div>
+
+        <!-- icons on right of nav -->
+        <div class="right-icons">
+
+            <!-- icon: search  -->
+            <div class="icon search">
+                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7894 15.4737L11.6139 11.3916C12.6107 10.0918 13.0775 8.46217 12.92 6.83163C12.7626 5.20109 11.9925 3.69095 10.7653 2.60587C9.53811 1.52078 7.94504 0.941501 6.30749 0.984893C4.66994 1.02828 3.10978 1.69112 1.94176 2.83967C0.773735 3.98823 0.0847753 5.53702 0.0138676 7.17362C-0.0570401 8.81021 0.495381 10.4128 1.55969 11.6581C2.624 12.9033 4.12098 13.6986 5.74864 13.8835C7.3763 14.0683 9.01351 13.629 10.33 12.6541L14.5305 16.7607C14.615 16.8434 14.7149 16.9086 14.8246 16.9526C14.9343 16.9966 15.0516 17.0186 15.1698 17.0173C15.288 17.016 15.4048 16.9914 15.5135 16.945C15.6222 16.8986 15.7207 16.8312 15.8034 16.7466C15.886 16.6621 15.9512 16.5622 15.9952 16.4525C16.0393 16.3428 16.0613 16.2255 16.0599 16.1073C16.0586 15.9891 16.0341 15.8723 15.9876 15.7636C15.9412 15.6549 15.8739 15.5564 15.7894 15.4737ZM1.25997 7.47205C1.26139 6.43489 1.57025 5.42144 2.14749 4.55977C2.72474 3.6981 3.54447 3.02689 4.50309 2.63098C5.4617 2.23506 6.51617 2.13221 7.53322 2.33542C8.55027 2.53863 9.48426 3.03878 10.2171 3.77266C10.95 4.50655 11.4489 5.44122 11.6507 6.45855C11.8525 7.47588 11.7482 8.5302 11.351 9.48827C10.9538 10.4463 10.2814 11.2652 9.41896 11.8412C8.5565 12.4173 7.54262 12.7247 6.50547 12.7247C5.11379 12.7223 3.77994 12.1678 2.79655 11.1831C1.81316 10.1983 1.26055 8.86372 1.25997 7.47205Z" fill="black"/>
+                </svg>
+            </div>
+
+            <!-- icon: store -->
+            <div class="icon store">
+                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.8835 3.50819H9.863C9.7536 2.69718 9.35724 1.9522 8.74579 1.40829C8.13433 0.864381 7.34824 0.557544 6.53 0.543396C5.71176 0.557544 4.92566 0.864381 4.31421 1.40829C3.70275 1.9522 3.3064 2.69718 3.197 3.50819H2.177C1.61579 3.50857 1.07766 3.73162 0.680745 4.12838C0.283833 4.52514 0.0605803 5.06319 0.0599976 5.6244V13.3399C0.0605004 13.901 0.283602 14.4391 0.680343 14.8359C1.07708 15.2327 1.61505 15.456 2.1762 15.4566H10.8832C11.4444 15.4561 11.9826 15.233 12.3794 14.8361C12.7763 14.4393 12.9995 13.9011 13 13.3399V5.6244C12.9994 5.06327 12.7762 4.5253 12.3794 4.12855C11.9826 3.73181 11.4446 3.5087 10.8835 3.50819ZM6.53 1.643C7.05741 1.65446 7.56512 1.84557 7.96918 2.18472C8.37325 2.52387 8.64948 2.99076 8.7522 3.50819H4.3078C4.41052 2.99076 4.68675 2.52387 5.09081 2.18472C5.49488 1.84557 6.00259 1.65446 6.53 1.643ZM11.9 13.3399C11.8997 13.6095 11.7925 13.8679 11.602 14.0586C11.4114 14.2493 11.153 14.3566 10.8834 14.357H2.1765C1.90694 14.3565 1.64856 14.2492 1.45801 14.0586C1.26746 13.8679 1.16029 13.6095 1.16 13.3399V5.6244C1.16032 5.35487 1.26752 5.09648 1.4581 4.9059C1.64868 4.71532 1.90708 4.60811 2.1766 4.60779H10.8836C11.1531 4.60817 11.4114 4.7154 11.602 4.90597C11.7925 5.09655 11.8997 5.35491 11.9 5.6244V13.3399Z" fill="black"/>
+                </svg>
+            </div>
+
+            <!-- icon: hamburger  -->
+            <div class="icon hamburger-menu">
+            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 8.5H15" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1.5H15" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN  -->
+    <main>
+        <!-- post container -->
+        <div class="post-container">
+            <!-- post01: iphone family -->
+            <div class="post" style="background-image: url(./src/post-one.jpg);">
+                <div class="text">
+                    <p class="heading-main">iPhone</p>        
+                    <p class="heading-sub">Meet the iPhone 16 family.</p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Shop iPhone</button>
+                </div>
+                <pre class="heading-grad">Built for Apple Intelligence </pre>
+            </div>
+
+            <!-- post02: iphone family -->
+            <div class="post black-bg" style="background-image: url(./src/ipad-pro.jpg);">
+                <div class="text">
+                    <p class="heading-main">iPad Pro</p>        
+                    <p class="heading-sub">Unbelievably thin. Incredibly Powerful.</p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Buy </button>
+                </div>
+                <pre class="heading-grad">Built for Apple Intelligence </pre>
+            </div>
+
+            <!-- post03: macbook air -->
+            <div class="post" style="background-image: url(./src/macbook-air.jpg);">
+                <div class="text">
+                    <p class="heading-main">MacBook Air</p>        
+                    <p class="heading-sub">sky blue color. <br> Sky high performance with M4. </p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Buy </button>
+                </div>
+            </div>
+
+            <!-- post04: iPad air -->
+            <div class="post" style="background-image: url(./src/ipad-air.jpeg);">
+                <div class="text">
+                    <p class="heading-main">iPad Air</p>        
+                    <p class="heading-sub">Now supercharged with M3 chip.</p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Buy </button>
+                </div>
+            </div>
+
+            <!-- post05: WATCH-->
+            <div class="post" style="background-image: url(./src/watch.jpeg);">
+                <div class="text">
+                    <p class="heading-main">WATCH</p>        
+                    <p class="heading-sub">Thinstant Classic</p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Buy </button>
+                </div>
+            </div>
+
+            <!-- post06: AirPods pro 2 -->
+            <div class="post black-bg pos-down" style="background-image: url(./src/air-pods2.jpg);">
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Buy </button>
+                </div>
+                <div class="text">
+                    <p class="heading-main">AirPods Pro 2 </p>        
+                    <p class="heading-sub">Now with a Hearing Air feature.</p>        
+                </div>
+            </div>
+
+            <!-- post07: Trade -->
+            <div class="post" style="background-image: url(./src/trade-in.jpg);">
+                <div class="text">
+                    <p class="heading-main">Trade In </p>        
+                    <p class="heading-sub">Get $170 - $ 630 in credit when you <br> trade in iPhone 12 or higher.</p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> Get your estimate </button>
+                </div>
+            </div>
+
+            <!-- post08: Card-->
+            <div class="post" style="background-image: url(./src/card.jpeg);">
+                <div class="text">
+                    <p class="heading-main">Card</p>        
+                    <p class="heading-sub">Get up to 3% Daily Cash back <br> with every purchase</p>        
+                </div>
+                <div class="post-button">
+                    <button class="button primary"> learn more</button>
+                    <button class="button secondary"> Apply Now </button>
+                </div>
+            </div>
+        </div>
+
+        <!--  slider component  -->
+        <div class="slider">
+            <!-- Slider-Main-Component-->
+            <div class="slider-post">
+                <!-- Slider - Post - Container  -->
+                <div class="slider-post-container">
+                    <!-- poster 01 -->
+                    <div class="poster" style="background-image: url(./src/poster01.png);">
+                        <p class="poster-genre">Comedy</p>
+                        <p class="poster-desc">A heartful comedy about life and <br> other hazard.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 02 -->
+                    <div class="poster" style="background-image: url(./src/poster02.jpg);">
+                        <p class="poster-genre">Thriller</p>
+                        <p class="poster-desc">There's more to work than life.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 03 -->
+                    <div class="poster" style="background-image: url(./src/poster03.jpg);">
+                        <!-- <p class="poster-genre">Live MLB</p> -->
+                        <p class="poster-desc">Live MLB games, every Friday.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 04 -->
+                    <div class="poster" style="background-image: url(./src/poster04.jpg);">
+                        <p class="poster-genre">Action</p>
+                        <p class="poster-desc"> It's only a legend until you <br> discover it.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 05 -->
+                    <div class="poster" style="background-image: url(./src/poster05.jpg);">
+                        <p class="poster-genre">Comedy</p>
+                        <p class="poster-desc">Kindness makes a Comeback.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 06 -->
+                    <div class="poster" style="background-image: url(./src/poster06.jpg);">
+                        <p class="poster-genre">Serial</p>
+                        <p class="poster-desc">A search for serial arsonists <br>ignites a twisted games of secrets <br>and suspicions.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 07 -->
+                    <div class="poster" style="background-image: url(./src/poster07.jpg);">
+                        <p class="poster-genre">Drama</p>
+                        <p class="poster-desc">Live your best life. </p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 08 -->
+                    <div class="poster" style="background-image: url(./src/poster08.jpg);">
+                        <!-- <p class="poster-genre"></p> -->
+                        <p class="poster-desc">Watch every club, every match,<br>live-all season long.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 09 -->
+                    <div class="poster" style="background-image: url(./src/poster09.jpg);">
+                        <p class="poster-genre">Drama</p>
+                        <p class="poster-desc">New Season.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    <!-- poster 10 -->
+                    <div class="poster" style="background-image: url(./src/poster10.jpg);">
+                        <p class="poster-genre">Sci-Fi</p>
+                        <p class="poster-desc">Build to destroy, Forced to<br>connect.</p>
+                        <button class="button post-button">Stream now</button>
+                    </div>
+                    
+                </div>
+                <!-- Slider - Post - Buttons -->
+                <div class="post-switch">
+                    <div class="switch-button left">
+                        <div class="icon arrow">
+                            <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.49587 12.605L13.6924 1.74033C14.0966 1.34812 14.1033 0.705584 13.7074 0.30508C13.3106 -0.0962698 12.662 -0.102021 12.2586 0.290195L0.307656 11.8874C0.110124 12.0799 -0.000848749 12.3432 4.88865e-06 12.6174C0.00171216 12.8915 0.115075 13.1542 0.315168 13.3441L12.2661 24.7167C12.4645 24.9058 12.7204 25 12.9755 25C13.2447 25 13.5131 24.8951 13.714 24.6878C14.1059 24.2839 14.0934 23.6414 13.6848 23.2534L2.49587 12.605Z" fill="#6C6C6D"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="switch-button right">
+                        <div class="icon arrow">
+                            <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5041 12.6049L0.307642 1.74032C-0.0966407 1.34811 -0.103299 0.705579 0.292618 0.305078C0.689389 -0.0962691 1.33798 -0.10202 1.74141 0.290193L13.6923 11.8873C13.8899 12.0798 14.0008 12.3431 14 12.6173C13.9983 12.8914 13.8849 13.1541 13.6848 13.344L1.7339 24.7167C1.53552 24.9058 1.27959 25 1.02453 25C0.75529 25 0.486906 24.8951 0.28596 24.6878C-0.10586 24.2839 -0.0933969 23.6414 0.315154 23.2534L11.5041 12.6049Z" fill="#6C6C6D"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+                <div class="button-tiny-oval"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- terms nd conditions  -->
+        <div class="tnc">
+            <ol>
+                <li> 1. Available for Qualified Purchasers only. Qualified Purchasers purchasing an eligible Mac/iPad (“Eligible Product”) with eligible AirPods/accessory (“Promotion Product”) from a Qualifying Location through September 30, 2025 will receive Promotion Savings (up to $199, not to exceed the price of the Promotion Product). Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Additional restrictions apply. View full offer terms here. </li>
+                <br>
+                <li> 2. Hearing Aid and Hearing Test: The Hearing Aid feature has received FDA authorization. The Hearing Test and Hearing Aid features are supported on AirPods Pro 2 with the latest firmware paired with a compatible iPhone or iPad with iOS 18 or iPadOS 18 and later and are intended for people 18 years old or older. The Hearing Aid feature is also supported on a compatible Mac with macOS Sequoia and later. It is intended for people with perceived mild to moderate hearing loss. </li>
+                <br>
+                <li>3. Hearing Protection: The Hearing Protection feature works with AirPods Pro 2 with the latest firmware when paired with a compatible iPhone, iPad, or Mac with iOS 18, iPadOS 18, or macOS Sequoia and later. Feature is only available in the U.S. and Canada. See support.apple.com/120850 for total attenuation and more information. The Hearing Protection feature is not suitable for protection against extremely loud impulse sounds, such as gunfire, fireworks, or jackhammers, or against sustained sounds louder than 110 dBA.</li>
+                <br>
+                <li>4. Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade-in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.</li>
+                <br>
+            </ol> 
+            <p>
+                To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                <br><br>
+                Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.
+                <br><br>
+                If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+                <br><br>
+                Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.
+                <br><br>
+                Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to the same supported language, as part of an iOS 18, iPadOS 18, and macOS Sequoia software update. Supported languages include English, French, German, Italian, Portuguese (Brazil), Spanish, Japanese, Korean, and Chinese (Simplified). More languages are coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages.
+                <br><br>
+                A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV+.
+                <br><br>
+                Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.
+                <br><br>
+            </p>
+        </div>
+
+        <!-- drop down menu (add js!)  -->
+        <div class="dd-menu">
+            <ul>
+                <li>
+                    <div class="text">Shop and Learn</div>
+                    <div class="icon">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">Account</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">Entertainment</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">Apple Store</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">For Business</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">For Education</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">For Healthcare</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">For Government</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text">Apple Values</div>
+                        <div class="icon">
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                        </div>
+                </li>
+                <li>
+                    <div class="text">About Apple</div>
+                    <div class="icon">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1L7 7L1 1" stroke="#6C6C6D" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- cc text -->
+        <div class="footer-text">
+            <ol>
+                <li>More ways to shop : Find an Apple Store or other retailer near you.  Or call 1-800-MY-APPLE (1-800-692-7753). </li><br>
+                <li>United States</li><br>
+                <li>Copyright &copy; 2025 Apple Inc. All rights reserved.  Privacy Policy | Terms of Use | Sales and Refunds | legal | Site Map</li><br>
+            </ol>
+        </div>
+
+    </footer>
+</body>
+</html>
