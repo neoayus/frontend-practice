@@ -1,0 +1,34 @@
+/* HERO SECTION  */
+.hero-section{
+   background-image: url('./../.assets/hero_image.jpg');
+   
+   height: 350px ; 
+   background-size: cover ; 
+
+   font-size: 0.85rem ; 
+
+ /* moving content to the end of webpage ; */
+   display: flex ; 
+   justify-content: center ; 
+   align-items: flex-end ; 
+}
+
+   .hero-section .hero-message{
+      height: 40px; 
+
+      display: flex ; 
+      justify-content: center ;
+      align-items: center ; 
+
+      background-color: white ; 
+      color: black ;
+      
+      width: 80% ; 
+      
+      margin-bottom: 2.2rem ;
+   }
+
+   .hero-section .hero-message a{
+      text-decoration: none ;
+      color: #007185 ;
+   }

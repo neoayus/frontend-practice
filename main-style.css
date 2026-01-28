@@ -1,0 +1,17 @@
+/* IMPORTING OTHER CSS FILES  */
+/* as there ain't no way to sectin css files so i made different files for different component so it dosen't get overwhelming */
+@import url('./.stylesheet/first-nav.css'); /* nav-bar */ 
+@import url('./.stylesheet/panel.css'); /* panel*/ 
+@import url('./.stylesheet/hero-section.css'); /* hero section */ 
+@import url('./.stylesheet/shop-section.css'); /* shop section */ 
+@import url('./.stylesheet/footer.css'); /* footer */
+/* Universal Changes  */
+*{
+ /* removing default margin and padding  */
+   margin : 0 ; 
+   padding : 0 ; 
+   font-family:Arial, Helvetica, sans-serif ; 
+
+ /* this makes the 'padding' count inside the border of an element   */
+   border: border-box ; 
+}

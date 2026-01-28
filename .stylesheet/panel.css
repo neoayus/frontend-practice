@@ -1,0 +1,43 @@
+.panel{
+   height: 40px ; 
+   
+   color: white ;
+   background-color: #222f3d ;
+
+   display: flex ; 
+   flex-direction: row ;
+
+   align-items: center ;
+   justify-content: space-evenly ; 
+}
+
+   .panel .panel-all{
+      display: flex ; 
+      justify-content: flex-top ; 
+      
+   }
+
+      .panel .panel-all .hamburger-icon{
+         font-size: 1.4rem ; 
+      }
+   
+      .panel .panel-all p{
+         font-size: 1.1em ; 
+         font-weight: 700 ; 
+         margin-left: 4px; 
+      }
+   
+   .panel .panel-options{
+      width: 70% ; 
+      font-size: 0.85rem ; 
+   }
+
+      .panel .panel-options p{
+         display: inline ; 
+         margin-left: 15px ; 
+      }
+      
+   .panel .deals{
+      font-size: 0.9rem ; 
+      font-weight: 700;
+   }

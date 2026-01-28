@@ -1,0 +1,155 @@
+.navbar{
+   height: 60px ; 
+   background-color: #0f1111 ;
+   color: white ;
+ 
+ /* making everything fit inside the nav bar horizontally  */
+   display: flex ; 
+   flex-direction: row ; 
+   
+   align-items: center ; 
+   
+ /* to make every div in navbar have even space */ 
+   justify-content: space-evenly;
+}
+
+ /* to make everything have a border on hover in nav bar  */
+   .border{
+      border : 2px solid transparent; 
+      &:hover{
+         border : 1px solid white; 
+         border-radius: 7px ; 
+         
+      }
+   }
+ /* we can nest in css by adding this :hover element inside the .border element by using a '&' ; '
+   .border:hover{
+      border : 1px solid white; 
+      border-radius: 7px ; 
+      
+   } */
+
+ /* FIRST DIVISION inside Nav-Bar */
+   .navbar .nav-logo{
+      height: 50px ; 
+      width: 100px ; 
+   }
+
+    /* setting up logo as background-image  */
+      .navbar .nav-logo .logo{
+         background-image : url("./../.assets/amazon_logo.png"); 
+         background-size: cover;
+         height: 50px ; 
+         width: 100% ; 
+      }
+
+ /* SECOND DIVISION : Address and location */
+   .navbar .nav-address{
+      background-color: transparent;
+   }
+   
+      .navbar .nav-address .add-first{
+         color: #cccccc ; 
+         font-size: 0.85rem ; 
+         
+         margin-left : 15px ; 
+      } 
+
+      .navbar .nav-address .address-icon{
+         display: flex ; 
+         flex-direction: row ; 
+         align-items: center ; 
+      }
+
+      .navbar .nav-address .add-second{
+         color: #ffffff ; 
+         font-size: 1rem ; 
+         
+         margin-left: 3px ; 
+      } 
+ 
+ /* designing third division of nav-bar */
+   .navbar .nav-search{
+      display: flex ;   
+      background-color: pink ; 
+      
+      justify-content: space-evenly ; 
+      
+      width: 620px ;
+      height: 40px ; 
+
+      border-radius: 5px ; 
+      
+    /* HOVER PROPERTIES  */
+      &:hover{
+         border: solid 3px rgb(255, 174, 0) ; 
+      }
+   }
+   
+      .navbar .nav-search .search-select{
+         background-color: f3f3f3;
+         border-top-left-radius: inherit ; 
+         border-bottom-left-radius: inherit ; 
+         width: 50px ; 
+         
+         background-color: rgb(201, 201, 201);
+
+         text-align: center ; 
+         
+         border: none; 
+      }
+      
+      .navbar .nav-search .search-input{
+         width: 100% ; 
+         
+         font-size: 1rem ; 
+         border: none ; 
+         background-color: white; 
+      }
+      
+      .navbar .nav-search .search-icon{
+         width: 45px ; 
+         
+         display: flex ; 
+         justify-content: center ; 
+         align-items: center ;
+         
+         font-size: 1.2rem ; 
+         
+         background-color: rgb(192, 148, 68) ; 
+         
+         border-top-right-radius: inherit ; 
+         border-bottom-right-radius: inherit ; 
+         
+         color: #0f1111 ; 
+      }
+      
+ /* Designing 4th Division of Nav Bar  */
+
+   .navbar .nav-signin{
+      display: flex ; 
+      flex-direction: column ; 
+   }
+   
+   .navbar span{
+      font-size: .7rem ; 
+   } 
+   
+   .navbar .nav-second{
+      font-size: .85rem ; 
+      font-weight: 700;
+   }
+
+ /* Designing Cart Box  */
+   
+ .navbar .nav-cart{
+      display: flex ; 
+      flex-direction: row ; 
+      align-items: flex-end ; 
+  }
+
+      .navbar .nav-cart .carticon i{
+         font-size: 1.8em ; 
+
+      }
+   
