@@ -1,0 +1,584 @@
+/* importing `inter` font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Universal Changes  */
+*{
+   border: 0 ; 
+   padding: 0 ; 
+   margin: 0 ; 
+   
+   box-sizing: border-box ; 
+   font-family: 'inter' ;
+   
+   position: relative ; 
+   z-index: 1;
+}
+
+ /* background image  */
+.bg{
+   height: 90vh ;
+   width: 100vw ; 
+   background-image: url('./assets/background-image.jpeg'); 
+   background-repeat: no-repeat;
+   background-size:cover ; 
+   
+ /* background-overlay ; */
+   &::before{
+      height: 100% ;
+      width: 100% ; 
+      
+      top : 0 ; 
+      left: 0 ; 
+      
+      content: '';
+      background-color: rgb(0,0,0,0.5);
+      position: absolute ; 
+      z-index: 0;
+   }
+}
+
+   .bg .header{
+      height: 11vh ; 
+      
+      display: flex; 
+      justify-content: space-between ;
+      align-items: center ;
+   }
+
+      .bg .header .head-logo{
+         height: 3rem ; 
+         width: 4rem  ; 
+         background-image: url('./assets/01_9b6c8f49-fd17-46b8-812f-bd3dc7e8f269.svg');
+         background-repeat: no-repeat;
+         background-size: contain;
+         
+       /* to paint the black logo green.  */
+         filter: invert(1) sepia(1) saturate(10000%) hue-rotate(68deg);
+         
+         margin-left: 2.5rem ; 
+      }
+
+      .bg .header .head-login-btn{
+         height: 2.4rem ;
+         width: 5.5rem ;
+
+         font-size: 1rem ; 
+         font-weight: 700;
+
+         color: rgba(210, 210, 210, 0.718) ; 
+         background-color: transparent;
+
+         border-radius: .4rem ; 
+         /* padding : .2rem ; */
+
+         margin-right: 2.5rem ; 
+         
+       /* on hover changes  */
+         &:hover{
+            background-color: rgba(155, 154, 154, 0.51);
+            transition: 0.5s ease ;
+         }
+      }
+.bg .head-deals{
+   display: flex ; 
+   flex-wrap :wrap ; 
+   justify-content: center;
+   margin-top: 2rem ;
+}
+
+   .bg .head-deals .deal {
+      height: 30vh ; 
+      width: 22vw; 
+
+      font-weight: 700 ; 
+      
+      display: flex ; 
+      flex-direction: column ;
+
+      justify-content: space-evenly ;
+      align-items: center ;
+      
+      margin: .5rem ; 
+      
+   }
+
+      .bg .head-deals .deal p{
+         color: #1ce783 ; 
+         font-size: .75rem ; 
+      }
+      .bg .head-deals .deal .deal-icon{
+         height: 70px ; 
+         width : 60% ; 
+
+         background-image: url('./assets/15_original.png'); 
+         background-repeat: no-repeat ; 
+         background-size: contain ; 
+      } 
+      
+    /* changing logo in trio .  */
+      .bg .head-deals .deal.two .deal-icon{
+         background-image: url('./assets/12_original.png'); 
+         width : 100% ; 
+      }
+
+    /* done here  */
+      
+      .bg .head-deals .deal .deal-disc{
+         font-size: 2rem ; 
+         color: white ;
+      }
+      .bg .head-deals .deal .deal-button{
+         height: 2.5rem ; 
+         /* width: 14rem ;  */
+         width: 100% ; 
+         
+         font-size: 1rem ;  
+         font-weight: 700;
+         color: black ;
+         background-color: #1ce783; 
+
+         border-radius: .3rem;
+         
+       /* transition  */
+         &:hover{
+            opacity: .65 ; 
+            transition: .5s ease ; 
+         }
+      }
+
+   .bg .signup{
+      display: flex ; 
+      flex-direction: column;
+      align-items: center ;
+      
+      padding: .3rem ; 
+      margin-top: .5rem ; 
+   }
+
+      .bg .signup .tnc{
+         color: rgba(170, 170, 170, 0.601) ; 
+
+         font-size: .8rem ;
+         text-decoration: underline ; 
+      } 
+
+      .bg .signup .signup{
+         color: white ;
+         text-decoration: underline ; 
+         
+       /* transaction effect  */
+         &:hover{
+            text-decoration: none ; 
+            transition: .7s ease ;
+         }
+      }
+
+.strip-one{
+   height: 10.3rem; 
+   width : 100vw ;
+ 
+ /* adding gradient  */
+   background: linear-gradient(to right, #081722, #0E4556 );
+   color: white;  
+   
+   display: flex ; 
+   justify-content: space-evenly;
+   align-items: center ;
+   
+   padding: 25px 40px ; 
+} 
+
+   .strip-one .logo{
+      height: 3.6rem ; 
+      width: 17rem ;
+
+      background-image: url('./assets/24_original.png');
+      background-repeat: no-repeat ; 
+      background-size: contain ; 
+   }
+
+   .strip-one .strip-txt{
+      height: 7.125rem ; 
+
+      display: flex ; 
+      flex-direction: column;
+      justify-content: left  ;
+
+      padding: 0px 100px 0px 30px ;
+   }
+
+      .strip-one .strip-txt .max-bundle{
+         color: #1ce783 ;
+         font-size: .75rem ; 
+         font-weight: 700;
+         padding-bottom: 3px;
+      }
+
+      .strip-one .strip-txt .pricing{
+         font-size: 1.5rem ; 
+         margin: 10px 0 10px ; 
+      }
+
+      .strip-one .strip-txt .save-more{
+         font-size: .625rem ;
+      }
+
+   .strip-one .button{
+      padding: 20px 8px 0px 8px  ; 
+      display: flex; 
+      flex-direction: column ; 
+      align-items: center ; 
+      justify-content: center;
+   }
+      .strip-one .button .btn{
+         height: 2.93rem ; 
+         
+         color: black ;
+         font-size: .85rem ;  
+         font-weight: 700;
+         background-color: #1ce783; 
+
+         padding: 0 2rem ; 
+         border-radius: .3rem;
+      }
+
+      .strip-one .button .terms{
+         font-size: .625rem ; 
+         padding-top: 4px ;
+         text-decoration: rgba(209, 209, 209, 0.89) underline;
+      }
+      
+.strip-two{
+   height: 10.3rem; 
+   width : 100vw ;
+   
+   display: flex ; 
+   flex-direction: column ; 
+   justify-content: space-evenly;
+   
+   align-items: center ;
+
+   background: linear-gradient(to bottom, #28A366, #16191D); 
+   padding: 30px 40px 30px 44px ; 
+}
+   .strip-two .s-two-text{
+      font-weight: 700 ; 
+      font-size: 1.25rem ; 
+      
+      color: white ; 
+      
+      margin-bottom: 10px ; 
+   }
+   .strip-two .s-two-btn{
+      height: 2.875rem ; 
+      width: 18rem ;
+
+      font-size: .875rem ; 
+      font-weight: 700;
+
+      color: white ;
+      background: transparent ;
+      border: 2.5px solid white ;
+      border-radius: 4px  ;
+      
+      &:hover{
+         border: none ; 
+         
+         color: black ; 
+         background-color: rgba(164, 164, 164, 0.601) ;
+
+         transition: .5s ease-out; 
+      }
+   }
+   
+.tv{
+   height: 1331px ;
+   width: 100vw ; 
+
+   background-color: rgb(11,12,15) ; 
+   padding-bottom: 70px ;
+}
+.tv .text-box.one {
+   display: flex ; 
+   flex-direction: column ; 
+   justify-content: center ; 
+   align-items: center;
+   
+   padding: 80px 20px 50px  ; 
+}
+
+/* MODIFY TEXT  */
+.green{
+   color: #1ce783; 
+   font-weight: 700 ; 
+   font-size: 13.33px ;    
+}
+.heading{
+   font-size: 3.75rem ; 
+   font-weight: 700 ; 
+   color: white;  
+   
+   margin:  16px 0 ; 
+}
+.text{
+   color: rgb(255, 255, 255) ; 
+   text-align: center ;
+   
+   padding-top: 1rem ; 
+}
+
+/* CARDS  */
+.shows{
+   display: flex ; 
+   justify-content: space-evenly;
+   margin: 0 100px 100px 0 ; 
+}
+.shows .card{
+   height: 453px ; 
+   width: 296px ; 
+
+   background-size: contain ; 
+   background-repeat: no-repeat ; 
+
+   color: white ;
+   font-weight: 700;
+   
+   border-radius: 12px ; 
+   
+   &::before{
+      content: '' ; 
+      top: 0 ; 
+      bottom: 0 ; 
+      
+      height: 100% ;
+      width: 100%; 
+      background-color: rgb(0,0,0,0.4);
+      position: absolute ; 
+      z-index:1 ; 
+   }
+}
+
+.card .title{
+   padding: 25px ;
+}
+   .card .title .sub-title{
+      font-size: 1rem ;
+   }
+   .card .title .main-title{
+      font-size: 26px ;    
+      padding: 8px 0px ;
+   }
+
+.text-box.two{
+   color: white ;
+   
+   display: flex; 
+   flex-direction: column ; 
+   align-items: center;
+   justify-content: center;
+}
+
+.text-box.two .btn{
+   height: 2.93rem ; 
+   
+   color: black ;
+   font-size: .85rem ;  
+   font-weight: 700;
+   background-color: #1ce783; 
+
+   padding: 0 2rem ; 
+   border-radius: .3rem;
+   margin: 20px 0 ; 
+}
+.text-box.two .disc{
+   font-size: 10px; 
+   color: rgba(195, 195, 195, 0.74) ; 
+   text-align: center ;
+   margin-bottom: 30px ; 
+}
+.text-box.two .vc{
+   font-size: 1rem ; 
+   font-weight: 700 ;
+   opacity: 0.7 ; 
+   text-decoration: underline ; 
+}
+.left-arrow{
+   background-image: url('./assets/');
+}
+
+ /* DESIGNING THE SECTION FOR SPORTS SECTION  */
+.sportstv{  
+   height: 870px ;
+   background-image: url('./assets/11_original.jpeg'); 
+   background-size: cover ; 
+   background-repeat: no-repeat ; 
+   
+   &::before{
+      content : '' ; 
+      top : 0 ; 
+      left: 0 ; 
+      height: 100% ; 
+      width: 100% ; 
+      background: rgb(0,0,0,0.4);      
+      position: absolute ; 
+      z-index: 1 ;
+   }
+}
+
+.sportstv .content {
+   padding: 230px 0 190px;  
+   margin: 0 174px ; 
+}
+
+.sportstv .content .st-tab{
+   display: flex; 
+}
+
+.sportstv .content .st-tab .opt{
+   color: white ;
+   font-size: .7rem ;
+   font-weight: 700;
+   margin-right: 35px ;
+}
+
+.sportstv .content .st-container{
+
+}
+.sportstv .content .st-container .container-heading{
+   color: white; 
+   font-size: 47px ; 
+   font-weight: 700 ; 
+   
+   margin : 20px 0  20px ; 
+}
+.sportstv .content .st-container .container-text{
+   color: white; 
+   font-size: 18px ; 
+   font-weight: 400 ; 
+}
+
+.sportstv .content .st-container .icons{
+   width: 381px; 
+   height: 75px ; 
+   
+   display: flex ; 
+   
+}
+
+ /* CSS FOR ALL THE CIRCLES  */
+.sportstv .content .st-container .icons .w-circ{
+   /* height: 55px ; 
+   width : 55px ; 
+   
+   background-color: pink;
+   border-radius: 50% ; 
+   margin: 23px 17px 0 0 ; 
+   
+   &::before{
+      content : '' ; 
+      top: 0 ; 
+      left: 0 ; 
+      height: 100% ;
+      width : 100%; 
+      background-color: white; 
+      position : absolute ; 
+      z-index: 1; 
+      background-size: contain ; 
+      background-repeat: no-repeat ; 
+      background-position: center;
+   }    */
+ /* CHANGING THE CSS FOREVER  */
+   height: 55px ; 
+   width : 55px ; 
+      background-size: contain ; 
+      background-repeat: no-repeat ; 
+      background-position: center;
+   border-radius: 50% ; 
+   margin: 23px 17px 0 0 ; 
+   position: relative ; 
+
+ /* setting background to be white for all the divs */
+ /* doing this allows me to set the bg:white for all the divs and i have to change the circle in all the imageas only.  */
+   content: '' ; 
+   top: 0 ; 
+   left: 0 ; 
+   height: 55px ; 
+   width: 55px; 
+   background-color : white; 
+   position : relative ;
+   z-index: 1 ; 
+   border-radius: 50% ; 
+}
+
+/* changing image in every circle  */
+
+.st-container .icons .w-circ.one{
+      background-image: url('./assets/47_original.png');
+}
+.st-container .icons .w-circ.two{
+      background-image: url('./assets/65_original.png');
+}
+.st-container .icons .w-circ.three{
+      background-image: url('./assets/57_original.png');
+}
+.st-container .icons .w-circ.four{
+      background-image: url('./assets/49_original.png');
+}
+.st-container .icons .w-circ.five{
+      background-image: url('./assets/10_original.webp');
+}
+
+ /* footer  */
+footer{
+   height: 493px ;
+   width: 100vw ; 
+      background-color: rgb(223, 223, 223) ;
+}
+
+footer .lists{
+   display: flex; 
+   justify-content: space-evenly ;  
+      font-size: .9rem ;
+      font-weight: 300;
+         padding: 52px 46px 85px ;
+}
+
+footer .lists ul{
+  list-style-type: none ; 
+}
+   footer .lists ul li{
+      padding-top: 8px;
+   }
+footer hr{
+   border: none ; 
+   border-top: solid 1px rgb(186, 186, 186) ; 
+   width: 80vw ; 
+   margin: 0 auto ;
+}
+
+/* SOCIAL MEDIA ICONS  */
+footer .socials{
+   height: 31px ;
+   width: 168px ; 
+      display: flex; 
+      margin: 52px 144px ; 
+}
+footer .socials .icon{
+   width: 25px ; 
+   height: 25px ; 
+   background-position: center ;
+   background-size: contain; 
+   background-repeat: no-repeat; 
+      margin : 0 9px; 
+}
+
+footer .foot-nav{
+
+}
+footer .foot-nav ul{
+  list-style-type: none ; 
+  font-size: .8rem ;
+  display: flex; 
+  justify-content: space-evenly ;
+  padding: 0 130px ; 
+}
